@@ -1,0 +1,72 @@
+
+/*                         
+  File:  /~tgoncalv/css/mySheet.css                                                                                                                                                                      
+  91.461 Assignment:  Creating Your First CSS Page                                                                                                                                                         
+                                                                                                                                                                                                         
+  Thiago G Goncalves, thiago_goncalves@student.uml.edu                                                                                                                                                    
+                                                                                                                                                                                                          
+  This is a simple css file.                                                                                                                                                
+                                                                                                                                                                                                          
+  Created on 9/10/15 by Thiago G Goncalves.
+  Upated on 9/23/14 by Thiago G Goncalves.
+*/
+
+/*
+It will select the elements with the tag name pre, and apply the property
+*/
+
+pre {
+    display:block;
+    font:normal 1em/1.7em Monaco,Monospace !important;
+    color:#303030;
+    background-color:#FFFFFF;
+    padding:0 1em;
+    overflow:auto;
+    border-left:15px grey solid;
+    border-right:1px grey solid;
+    border-bottom: 1px grey solid;
+    border-top: 1px grey solid;
+}
+
+/*
+This code was inspired by 
+http://www.hongkiat.com/blog/css-better-paragraph/
+
+the strategy is to select the first element in the dom and select the fitst letter, and apply those properties to the desired element.
+
+*/
+.modified p:first-child:first-letter {
+font-size: 72px;
+    float: left;
+    padding: 10px;
+    height: 64px;
+    font-family: 'HominisNormal';
+    background-color: #7F7664;
+    margin-right: 10px;
+    color: white;
+    border-radius: 5px;
+    line-height: 70px;    
+}
+ 
+
+
+/*
+the pound is to select the element with the id avatar and apply the given property.
+*/
+
+#avatar { 
+    box-shadow: 10px 10px 5px #888888;
+}
+
+
+
+
+/*This footer id will be fixed/static on position at the bottom of the screen. */
+#footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 30px;
+    width: 100%;
+    background: #444;
+}

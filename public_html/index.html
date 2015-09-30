@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        
+    <!--
+	File:  /~tgoncalv/index.html
+	91.461 Assignment:  Creating Your First Web Page
+  
+	Thiago G Goncalves, thiago_goncalves@student.uml.edu
+  
+	This is a simple webpage that uses bootstrap css libries.
+
+	Created on 9/10/15 by Thiago G Goncalves.
+	Updated on 9/23/15 by Thiago G Goncalves
+      -->
+
+    <title>Thiago's Workspace</title>
+    <meta name="Author" content="Thiago G Goncalves, gebrim.goncalves@gmail.com" >
+    
+    <!-- The physical path of bootstrap in the server -->
+    <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
+    
+    
+    <!-- The physical path of my custom style sheet in the server -->
+    <link rel="stylesheet"  href="css/mySheet.css">
+    
+  </head>
+  
+  <body>
+    <br>  
+    
+    <!-- Bootstrap Grid system 12 takes the whole screen horizontally so will be deviding to set up the page accordingly -->
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-10">
+	<ul class="nav nav-pills">
+	  <!-- this tab will take to the home page, it will look for a physical file named index.html in the current dictory. -->
+	  <li role="presentation" class="active">
+	    <a href="index.html">Home</a>
+	  </li>
+	  <!-- This tab does not take anywhere, yet. -->
+	  <li role="presentation"><a href="homework.html">Homework</a></li>
+	</ul>
+      </div>
+      
+      <hr/>
+      <div class="col-md-2"></div>
+      <div class="col-md-6">
+	<br/>
+	<div class="row">
+	  <div class="col-md-3">
+	    <span class="pull-right">
+	      <!-- Loading image file from the local server-->
+	      <img id="avatar" src="images/avatar.jpg" class="img-rounded" alt="Cinque Terre" width="100" height="142">
+            </span>
+	    
+	  </div>
+	  <div class="col-md-9">
+	    
+	    <!--  Will be testing the css class inside the mySheet.css file -->
+	  <div class="modified">
+	      <p>Hello, I am Thiago Goncalves an Object Oriented Progammer who loves to spend time implementing new programming ideas. Got introduced to Java in 2012 and since then it has been Java and I are best friends.
+	      </p>
+	  </div>
+	  </div>
+	</div>
+	<h3>Testing coding area.</h3>
+	<!-- If bootstrap is loaded correctly this text area should appear exacly as it is type inside the <pre> tag -->
+	<pre>
+	   package com;
+	   
+	   public HelloClass class { 
+	          public static void main(String[] args){
+	                 System.out.println("Java says Hello!");
+	          } 
+	   }
+	</pre>
+	  <!--Bootstrap pull right does exacly as the name say. -->
+	  <div class="pull-right">
+	    <p>Bootstrap rocks.</p>
+	  </div>	 
+      </div>
+    </div>
+    <!-- This will be in a fixed position at the bottom because of the given css rules to the id "footer" mySheet.css  -->
+    <div id="footer">
+    “If debugging is the process of removing software bugs, then programming must be the process of putting them in. - Edsger Dijkstra.
+    </div>
+
+    
+  </body>
+</html>
